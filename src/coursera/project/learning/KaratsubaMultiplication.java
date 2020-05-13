@@ -1,4 +1,4 @@
-package cousera.project.learning;
+package coursera.project.learning;
 
 public class KaratsubaMultiplication {
 
