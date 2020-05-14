@@ -9,15 +9,23 @@ public class InsertionSort {
 		// get the array length
 		int arrLen = arr.length;
 
-		for (int i = 0; i < arr.length; i++) {
+		// loop over array
+		for (int i = 0; i < arrLen; i++) {
 
+			// consider first pointer as sorted one
 			int num = arr[i];
+			
+			// assign value to j for looping further
 			int j = i - 1;
 
+			// loop through array till j >= 0 and current num is less then this number
 			while (j >= 0 && arr[j] > num) {
+				// swap values
 				arr[j + 1] = arr[j];
 				j--;
 			}
+			
+			// assign num to this value
 			arr[j + 1] = num;
 		}
 
